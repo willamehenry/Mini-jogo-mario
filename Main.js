@@ -4,8 +4,8 @@ const pipe = document.querySelector('.pipe')
 const start = document.querySelector('.start')
 const gameOver = document.querySelector('.game-over')
 
-audioStart = new Audio('./src/audio/audio_theme.mp3')
-audioGameOver = new Audio('./src/audio/audio_gameover.mp3')
+audioStart = new Audio('../soung/audio_theme.mp3')
+audioGameOver = new Audio('../soung/audio_gameover.mp3')
 
 
 const startGame = () => {
@@ -17,14 +17,14 @@ const startGame = () => {
 }
 
 const restartGame = () => {
-    
+
     gameOver.style.display = 'none'
     pipe.style.left = ''
     pipe.style.right = '0'
-    
+
     mario.style.width = '150px'
     mario.style.bottom = '0'
-    
+
     start.style.display = 'none'
 
     audioGameOver.pause()
@@ -56,7 +56,7 @@ const loop = () => {
 
             mario.classList.remove('.jump')
             mario.style.bottom = `${marioPosition}px`
-            
+
             mario.style.width = '80px'
             mario.style.marginLeft = '50px'
 
@@ -73,7 +73,9 @@ const loop = () => {
             }
             setTimeout(stopAudio, 7000)
 
+           
             gameOver.style.display = 'flex'
+
 
             clearInterval(loop)
         }
