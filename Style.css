@@ -37,12 +37,28 @@ button {
     padding: 1rem;
     border-radius: 1.5rem;
     position: fixed;
+    margin-bottom: 7rem;
 
     cursor: pointer;
     z-index: 1;
 
 }
+.start{
 
+    
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    
+    top: 248px;
+    left: 0px;
+    right: 0px;
+    width: 140px ;
+   margin:auto;
+    
+}
 
 button:hover {
     border: 2px solid green;
@@ -73,14 +89,14 @@ button:hover {
 
 
 .game-over .h1game {
-    font-size: 3rem;
+    font-size: 2rem;
     color: red;
     text-align: center;
     border: 2px solid red;
     background-color: rgba(129, 17, 17, 0.6);
     border-radius: 1rem;
     transform: scale(1.4);
-    margin-top: 20rem;
+    margin-top: 8rem;
 }
 
 
