@@ -133,7 +133,7 @@ button:hover {
 }
 
 .pipe-animation {
-    animation: pipe-animation 2s infinite linear;
+    animation: pipe-animation 1.6s infinite linear;
 }
 
 @keyframes pipe-animation {
@@ -147,7 +147,7 @@ button:hover {
 }
 
 .jump {
-    animation: jump 700ms ease-out;
+    animation: jump .7s ease-out;
     transform: rotate(6.142rad);
     transition: .7s;
 }
@@ -195,6 +195,40 @@ button:hover {
 
 
     }
+    @keyframes pipe-animation {
+        from {
+            right: -160px;
+        }
+    
+        to {
+            right: 100%;
+        }
+    }
+    
+    .jump {
+        animation: jump 1s ease-out;
+        transform: rotate(6.142rad);
+        transition: .7s;
+    }
+    
+    @keyframes jump {
+        0% {
+            bottom: 0;
+        }
+    
+    
+    
+        40% {
+            bottom: 470px;
+        }
+    
+        50% {
+            bottom: 500px;
+        }
+    
+    
+    }
+    
 
 
 
